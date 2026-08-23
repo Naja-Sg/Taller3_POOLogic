@@ -5,8 +5,10 @@ var options = new List<string> { "s", "n" };
 var sumatoria = 0;
 
 
-var order = ConsoleExtensions.GetInt("Ingrese el order de la matriz: ");
+var order = ConsoleExtensions.GetInt("Ingrese el orden de la matriz: ");
 int[,] matriz = new int[order, order];
+var max = matriz[0, 0];
+var min = matriz[0, 0];
 
 do
 {
@@ -26,16 +28,42 @@ do
 
     for (int f = 0; f < order; f++) 
     {
-        for (int c = 0; c < order; c++) {
-
-
-
+        for (int c = 0; c < order; c++)
+        {
+            sumatoria = sumatoria + matriz[f,c]; 
         }
 
     }
 
     Console.WriteLine($"La sumatoria es: {sumatoria}");
 
+    for (int f = 0; f < order; f++)
+    {
+        for (int c = 0; c < order; c++)
+        {
+            if (matriz[f,c] > max)
+            {
+                max = matriz[f,c];
+            }
+        }
+
+    }
+
+    Console.WriteLine($"El valor máximo es: {max}");
+
+    for (int f = 0; f < order; f++)
+    {
+        for (int c = 0; c < order; c++)
+        {
+            if (matriz[f, c] < min)
+            {
+                min = matriz[f, c];
+            }
+        }
+
+    }
+
+    Console.WriteLine($"El valor mínimo es: {min}");
 
 
     do

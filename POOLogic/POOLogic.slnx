@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/30/">
+    <Project Path="30/MatrixOperations.csproj" />
+  </Folder>
+  <Folder Name="/35/">
+    <Project Path="PrimeFactorization/PrimeFactorization.csproj" />
+  </Folder>
+  <Folder Name="/Shared/">
+    <Project Path="ConsoleExtensions1/Utilities_Shared.csproj" />
+  </Folder>
+</Solution>

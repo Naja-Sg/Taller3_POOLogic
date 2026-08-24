@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ConsoleExtensions1\Utilities_Shared.csproj" />
+    <ProjectReference Include="..\PrimeFactors\PrimeFactors.csproj" />
   </ItemGroup>
 
 </Project>

@@ -4,6 +4,7 @@
   </Folder>
   <Folder Name="/35/">
     <Project Path="PrimeFactorization/PrimeFactorization.csproj" />
+    <Project Path="PrimeFactors/PrimeFactors.csproj" />
   </Folder>
   <Folder Name="/Shared/">
     <Project Path="ConsoleExtensions1/Utilities_Shared.csproj" />

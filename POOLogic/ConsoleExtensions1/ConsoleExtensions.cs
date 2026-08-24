@@ -70,4 +70,5 @@ public static class ConsoleExtensions //no tenía Static, pero se lo vamos a pon
         }
         return null;
     }
+
 }

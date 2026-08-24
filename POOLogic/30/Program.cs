@@ -2,16 +2,16 @@
 
 var answer = String.Empty;
 var options = new List<string> { "s", "n" };
-var sumatoria = 0;
 
-
-var order = ConsoleExtensions.GetInt("Ingrese el orden de la matriz: ");
-int[,] matriz = new int[order, order];
-var max = matriz[0, 0];
-var min = matriz[0, 0];
 
 do
 {
+
+    var order = ConsoleExtensions.GetInt("Ingrese el orden de la matriz: ");
+    int[,] matriz = new int[order, order];
+    var sumatoria = 0;
+    var max = matriz[0, 0];
+    var min = matriz[0, 0];
 
 
     for (int f = 0; f < order; f++) // filas

@@ -25,7 +25,7 @@ public class PrimeFactorization
 
     //PublicMethods
 
-    public List<int> toList(int number) // I get a list of all the numbers that compound Number, starting in 1
+    public List<int> toList(int number) // I get a list of all the numbers that compound Number, starting in 2
     {
         List<int> listNumber = new List<int>();
 
@@ -55,7 +55,7 @@ public class PrimeFactorization
         return divisors;
     }
 
-    public List<int> toPrimeFactors(int number, List<int> list) // I get a list from all the divisors of the number from the previous list
+    public List<int> toPrimeFactors(int number, List<int> list) 
     {
         List<int> primeFactors = new List<int>();
 

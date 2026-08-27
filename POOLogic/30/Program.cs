@@ -7,7 +7,7 @@ var options = new List<string> { "s", "n" };
 do
 {
 
-    var order = ConsoleExtensions.GetInt("Ingrese el orden de la matriz: ");
+    var order = ConsoleExtensions.GetInt("Ingrese orden de la matriz: ");
     int[,] matriz = new int[order, order];
     var sumatoria = 0;
     var max = matriz[0, 0];
@@ -19,7 +19,7 @@ do
         for (int c = 0; c < order; c++) // columnas. Recorrido por filas
         {
             matriz [f, c] = (f + 1) - c;
-            Console.Write($"{matriz[f, c]}  ");
+            Console.Write($"{matriz[f, c],-5}"); ;
         }
 
         Console.Write("\n");
@@ -30,12 +30,13 @@ do
     {
         for (int c = 0; c < order; c++)
         {
-            sumatoria = sumatoria + matriz[f,c]; 
+            sumatoria = sumatoria + matriz[f,c];
         }
 
     }
 
     Console.WriteLine($"La sumatoria es: {sumatoria}");
+
 
     for (int f = 0; f < order; f++)
     {
@@ -50,6 +51,7 @@ do
     }
 
     Console.WriteLine($"El valor máximo es: {max}");
+
 
     for (int f = 0; f < order; f++)
     {

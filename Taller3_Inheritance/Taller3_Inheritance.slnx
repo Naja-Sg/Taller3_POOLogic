@@ -1,8 +1,0 @@
-<Solution>
-  <Folder Name="/Backend/">
-    <Project Path="GeometricFigure/Backend.csproj" />
-  </Folder>
-  <Folder Name="/Frontend/">
-    <Project Path="Frontend/Frontend.csproj" />
-  </Folder>
-</Solution>
